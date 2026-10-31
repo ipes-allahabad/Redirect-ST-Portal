@@ -11,14 +11,14 @@
       height: 100%;
       overflow: hidden;
       background: #f8fafc;
+      -webkit-overflow-scrolling: touch;
     }
     .iframe-crop-box {
-      position: absolute;
-      /* Shifts the container down by 38px to hide the Google bar, while expanding height to prevent cutting off the bottom */
-      top: 0px;
+      position: fixed;
+      top: 0;
       left: 0;
       width: 100%;
-      height: calc(100% + 38px);
+      height: 100%;
       overflow: hidden;
     }
     .iframe-crop-box iframe {
